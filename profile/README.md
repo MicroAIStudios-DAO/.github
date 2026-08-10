@@ -1,79 +1,51 @@
 # MicroAI Studios DAO
 
-**Production-Ready AI Governance Infrastructure for the Enterprise**
+We build governed AI systems that turn ambitious workflows into inspectable, testable software.
 
-MicroAI Studios DAO LLC is a Wyoming-registered Decentralized Autonomous Organization building verifiable, ethical AI governance systems. We combine cryptographic trust verification with regulatory-compliant organizational structures to deliver enterprise-grade AI management solutions.
+Our engineering standard is simple: secure defaults, human authority over consequential actions, evidence-backed claims, and small changes that can be reviewed and reversed.
 
-## What We Build
+## Canonical product architecture
 
-### Synthetic Trust Framework
-Our core innovation is the **Synthetic Trust Framework**—a production-ready system that provides mathematical guarantees for AI decision-making through cryptographic verification, quantifiable trust metrics, and human oversight mechanisms.
+```mermaid
+flowchart TD
+  D["Dynexis — product family"] --> C["COREtex — operating runtime"]
+  C --> P["ProofGuard — governance engine"]
+  P --> A["Aegis — assurance offer"]
+  C --> L["LaunchOpsPro — flagship operator product"]
+  D --> G["Golden Academy — education line"]
+```
 
-**Key Capabilities:**
-- **Cryptographic Decision Verification**: HMAC-SHA256 signatures with full audit trails
-- - **Trust Metrics Engine**: Quantifiable scores for EPI compliance, thought log completeness, and stakeholder satisfaction
-  - - **Guardian Oversight System**: Multi-tier human review with veto authority and emergency controls
-    - - **Anomaly Detection**: Real-time pattern analysis for AI behavioral drift
-     
-      - ### EPI (Ethical Profitability Index)
-      - A non-compensatory scoring framework ensuring AI decisions balance profitability with ethical considerations. The EPI uses harmonic mean calculations and golden ratio balance penalties to prevent profit-only optimization.
-     
-      - ### EXECAI Stakeholder
-      - An AI agent with 33% voting power in governance decisions, creating balanced oversight with founders/team (33%) and investors (33%). EXECAI evaluates proposals through EPI validation before casting autonomous votes.
-     
-      - ## Technical Architecture
-     
-      - | Component | Technology | Status |
-      - |-----------|------------|--------|
-      - | Smart Contracts | Solana (Anchor) + Ethereum (Solidity) | Devnet Deployed |
-      - | Backend Services | Python 3.11, Flask | Production Ready |
-      - | Trust Stack | Custom cryptographic verification | Complete |
-      - | Dashboard | React + TypeScript | Functional |
-      - | Database | SQLite → PostgreSQL | 13 tables deployed |
-     
-      - **Deployment Tests:** 29/29 passing (100%)
-      - **Unit Tests:** 17/17 passing (100%)
-     
-      - ## Governance Structure
-     
-      - MicroAI DAO operates as a **Wyoming DAO LLC**, providing:
-      - - Legal entity recognition under Wyoming DAO Supplement
-        - - AI Manager registration with defined voting rights
-          - - Smart contract-governed treasury management
-            - - KYC-compatible member registry
-             
-              - ## Current Status
-             
-              - | Phase | Description | Progress |
-              - |-------|-------------|----------|
-              - | Phase 1 | Core Components & Security | ✅ Complete |
-              - | Phase 2 | Synthetic Trust Integration | ✅ Complete |
-              - | Phase 3 | API Implementation | 🔄 In Progress |
-              - | Phase 4 | Testnet Deployment | Planned |
-              - | Phase 5 | Security Audit | Scheduled |
-             
-              - ## Repository
-             
-              - | Repository | Description |
-              - |------------|-------------|
-              - | [microai-dao-core](https://github.com/MicroAIStudios-DAO/microai-dao-core) | Unified monorepo with smart contracts, backend, and dashboard |
-             
-              - ## Get Started
-             
-              - ```bash
-                git clone https://github.com/MicroAIStudios-DAO/microai-dao-core.git
-                cd microai-dao-core
-                pip install -r requirements.txt
-                python database/init_db.py
-                pytest tests/unit/ -v
-                ```
+| Layer | Role | Canonical source | Maturity |
+|---|---|---|---|
+| Dynexis | Product-family architecture | [dynexis-core](https://github.com/Gnoscenti/dynexis-core) | Architecture reference |
+| COREtex | Shared operating and orchestration layer | [gnoscenti-command-center](https://github.com/Gnoscenti/gnoscenti-command-center) | Active integration surface |
+| ProofGuard | Governance engine and evidence model | [proofguard-ai](https://github.com/Gnoscenti/proofguard-ai) | Active prototype |
+| Aegis | Buyer-facing governance-assurance offer powered by ProofGuard | [ProofGuard product definition](https://github.com/Gnoscenti/proofguard-ai/tree/main/docs) | Commercial packaging; not a separate engine |
+| LaunchOpsPro | Flagship founder/operator workflow product | [LaunchOpsPro](https://github.com/Gnoscenti/LaunchOpsPro) | Active flagship |
+| Golden Academy | Commercial AI education line | [AI Integration Course v2](https://github.com/MicroAIStudios-DAO/ai-integration-course-v2) | Canonical course property |
 
-                ## Contact
+## Active product repositories
 
-                Building the future of ethical AI governance. For partnership inquiries, investment discussions, or technical collaboration:
+| Product | Outcome | Evidence to inspect |
+|---|---|---|
+| [LaunchOpsPro](https://github.com/Gnoscenti/LaunchOpsPro) | Governed launch and operating workflows for founders and lean teams | Architecture, tests, CI, release-readiness notes |
+| [ProofGuard AI](https://github.com/Gnoscenti/proofguard-ai) | Policy, attestation, human-review, and audit concepts for agentic systems | Threat model, control matrix, fixtures, tests |
+| [AI Integration Course v2](https://github.com/MicroAIStudios-DAO/ai-integration-course-v2) | Guided, practical AI education | Product flow, curriculum, deployment signals |
+| [realestate-ai](https://github.com/Gnoscenti/realestate-ai) | Canonical real-estate AI product | Tests, CI, paid-offer implementation |
+| [founder-media-os](https://github.com/Gnoscenti/founder-media-os) | Multi-agent media production workflow | Deployable pipeline and test evidence |
+| [EPI Governance](https://github.com/Gnoscenti/EPI-governance) | Ethical Profitability Index governance research and implementation | Standards, tests, CI, Docker |
 
-                📧 [Contact via GitHub](https://github.com/MicroAIStudios-DAO)
+## How we work
 
-                ---
+- Every active repository should explain the problem, architecture, setup, test path, security model, and current limitations.
+- CI must reproduce the checks named in the README.
+- Examples and screenshots are labeled as live, recorded, synthetic, or illustrative.
+- Compliance mappings are engineering aids, not certifications or legal advice.
+- Secrets never belong in Git; consequential automation fails closed by default.
+- Consolidation preserves history and unique work before any repository is archived.
 
-                *MicroAI Studios DAO LLC — Verifiable AI Governance for the Enterprise*
+Read the [portfolio map](https://github.com/MicroAIStudios-DAO/.github/blob/main/docs/PORTFOLIO.md) for product boundaries and the [consolidation record](https://github.com/MicroAIStudios-DAO/.github/blob/main/docs/CONSOLIDATION.md) for canonical-repository decisions.
+
+## Collaboration
+
+Start with the repository README and contribution guide. For security concerns, follow the private reporting process in [`SECURITY.md`](https://github.com/MicroAIStudios-DAO/.github/blob/main/SECURITY.md); do not open a public issue containing vulnerability details.
